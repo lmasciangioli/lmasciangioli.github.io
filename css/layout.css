@@ -1,0 +1,228 @@
+@media(min-width:1051px){
+    .container{
+        /* Step 1: Set display to grid */
+        display:grid;
+        /* Step 2: setup rows amd columns */
+        grid-template-columns: 100px repeat(2,minmax(auto, auto));
+        grid-template-rows: 4em repeat(2,minmax(370px, auto));
+        grid-gap: 20px;
+        grid-template-areas:
+            "sr sr sr hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd"
+                "srd srd srd main main main main main main main main main main main sl sl sl sl sl sl sl sl sl sl sl sl"
+                "srd srd srd maind maind maind maind maind maind maind maind maind maind maind sld sld sld sld sld sld sld sld sld sld sld sld"
+                "ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft";
+        border: 20px solid white;
+        border-right: 50px solid white;
+        border-left: 50px solid white;
+        align-content: left;
+    }
+
+    .box {
+        border: 0px solid red;
+        background: #FFFFFF;
+        border:  0px solid black;
+        border-radius: 4px;
+        justify-content: left;
+
+    }
+
+    .sideleft {
+        grid-area:sl;
+        background: #F5F5F5;
+        display: grid;
+        justify-content: left;
+        align-items: left;
+        grid-template-columns: repeat(1,minmax(auto, 300px));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: auto;
+        height: max-content;
+        justify-content: center;
+        text-align: justify;
+
+    }
+
+    .sideleftd {
+        grid-area:sld;
+        background: #F5F5F5;
+        display: grid;
+        justify-content: left;
+        grid-template-columns: repeat(1,minmax(auto, 300px));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: auto;
+        height: max-content;
+        justify-content: center;
+        text-align: justify;
+        margin-top: -500px;
+    }
+
+    .header {
+        grid-area:hd;
+        height: 4em;
+        align-items: left;
+        justify-content: left;
+        background: #FFFFFF;
+
+    }
+
+    .footer {
+        grid-area:ft;
+        height: 4em;
+        text-align:center;
+        align-content:center;
+        justify-content:center;
+    }
+
+    .sideright {
+        grid-area:sr;
+        height: auto;
+        background: #FFFFFF;
+        background-image:url("../images/logo.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: left;
+    }
+
+    .content {
+        grid-area:main;
+        background: white;
+        text-align: justify;
+    }
+
+    .content2 {
+        grid-area:maind;
+        text-align: justify;
+    }
+
+    .siderightd {
+        grid-area:srd;
+        justify-content: left;
+        align-content: left;
+        place-content: left;
+        font-size:22px;
+        background: #FFFFFF;
+        text-align: left;
+        border-left: 0px solid black;
+        margin-left: -90px;
+    }
+}
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:1050px){
+
+    .container{
+        /* Step 1: Set display to grid */
+        display:grid;
+        /* Step 2: setup rows amd columns */
+        grid-template-columns: 8em repeat(2,minmax(auto, auto));
+        grid-template-rows: 4em repeat(4,minmax(370px, auto));
+        grid-gap: 5px;
+        grid-template-areas: 
+            "sr hd hd"
+                "srd main main"
+                "srd maind maind"
+                "srd sl sld"
+                "ft ft ft";
+        border: 10px solid white;
+        border-right: 25px solid white;
+    }
+
+    .box {
+        border: 0px solid red;
+        background: #FFFFFF;
+        border:  0px solid black;
+        border-radius: 4px;
+        justify-content: center;
+    }
+
+    .sideleft {
+        grid-area:sl;
+        background: #F5F5F5;
+        display: grid;
+        justify-content: left;
+        grid-template-columns: repeat(1,minmax(auto, 300px));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: auto;
+        height: max-content;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .header {
+        grid-area:hd;
+        height: 4em;
+        align-items: left;
+        justify-content: left;
+        background: #FFFFFF;
+
+    }
+
+    .footer {
+        grid-area:ft;
+        height: 4em;
+        text-align:center;
+        align-content:center;
+        justify-content:center;
+
+    }
+
+    .sideright {
+        grid-area:sr;
+        height: 4em;
+        background: #FFFFFF;
+        background-image:url('../images/logo.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+    }
+}
+
+.content {
+    grid-area:main;
+    width: auto;
+    text-align: justify;
+}
+
+.sideleftd {
+    grid-area:sld;
+    background: #F5F5F5;
+    width: auto;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: repeat(1,minmax(auto, 300px));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 2rem;
+    height: max-content;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.content2 {
+    grid-area:maind;
+    text-align: justify;
+}
+
+.siderightd {
+    grid-area:srd;
+    justify-content: left;
+    align-content: left;
+    place-content: left;
+    font-size:22px;
+    background: #FFFFFF;
+    text-align: left;
+    border-left: 0px solid black;
+    margin-left: -90px;
+}
+
+.col-25, .col-75, input[type=submit] {
+    width: 30%;
+    margin-top: 0;
+}

@@ -1,0 +1,117 @@
+/* SmallScreens */
+@media (max-width:599px){
+    .horizontal-list {
+    }
+
+    .horizontal-list li {
+		    display: inline;
+    }
+
+    .container{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4em auto;
+        grid-gap: 3px;
+        border: 7px solid white;
+        grid-template-areas: 
+            "sr"
+                "hd"
+                "srd"
+                "main"
+                "maind"
+                "sl"
+                "sld"
+                "ft"
+    }
+
+    .box {
+        background: #FFFFFF;
+        border:  0px solid black;
+        border-radius: 4px;
+        justify-content: center;
+        height: auto;
+        border: 0px solid black;
+    }
+
+    .sideleft {
+        grid-area:sl;
+        height: 8em;
+        background: #F5F5F5;
+        display: grid;
+        justify-content: left;
+        grid-template-columns: repeat(1,minmax(auto, 300px));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: auto;
+        height: max-content;
+        justify-content: center;
+        text-align: justify;
+
+    }
+
+    .header {
+        grid-area:hd;
+        height: 4em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #FFFFFF;
+    }
+
+    .footer {
+        grid-area:ft;
+        height: 4em;
+        text-align:center;
+        align-content:center;
+        justify-content:center;
+
+
+    }
+
+    .sideright {
+        grid-area:sr;
+        background: #FFFFFF;
+        background-image:url('../images/logo.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+
+    }
+
+    .content {
+        grid-area:main;
+        width: auto;
+
+    }
+
+    .sideleftd {
+        grid-area:sld;
+        height: 8em;
+        background: #F5F5F5;
+        display: grid;
+        justify-content: left;
+        grid-template-columns: repeat(1,minmax(auto, 300px));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: auto;
+        height: max-content;
+        justify-content: center;
+        text-align: justify;
+
+    }
+
+    .content2 {
+        grid-area:maind;
+    }
+
+    .siderightd {
+        grid-area:srd;
+        justify-content: space-around;
+        align-content: stretch;
+        text-align: center;
+        background: #FFFFFF;
+    }
+}

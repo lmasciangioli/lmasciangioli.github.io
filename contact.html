@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog: Project 1</title>
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/small-medium.css">
+        <link rel="stylesheet" type="text/css" href="css/postcards.css">
+        <link rel="stylesheet" type="text/css" href="css/contactform.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="css/social.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="backgroundgeneral">
+
+        <!-- General Layout -->
+
+        <div class="container">
+            <div class="header box">
+                <div><h1>Project 1: Blog<h1></div></div>
+                    <div class="sideright box"></div>
+                    <div class="siderightd box text">
+                        <ul class="menu">
+                            <li class="menucolor li"><a class="link" href="index.html">Blog</a></li>
+                            <li class="menucolor li"><a class="link" href="author.html">Author</a></li>
+                            <li class="menucolor li"><a class="link" href="archive.html">Archive</a></li>
+                            <li class="menucolor li"><a class="link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- -Start Blog Content -->
+
+                    <div class="content box div2">
+                        <div class="div2">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="fname">First Name</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="lname">Last Name</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="country">Country</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select id="country" name="country">
+                                            <option value="australia">Australia</option>
+                                            <option value="canada">Canada</option>
+                                            <option value="usa">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <textarea class="textfield" id="subject" name="subject" placeholder="Write something.."></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="content2 box">
+                    </div>
+                    <div class="footer box">
+                        <div>
+                            Udacity FrontEndWeb Development Project 1: Blog
+                        </div>
+                    </div>
+        </div>
+    </body>
+</html>
